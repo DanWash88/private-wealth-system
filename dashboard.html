@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Private Wealth System | Dashboard</title>
+  <link rel="stylesheet" href="CSS/dashboard.css" />
+</head>
+<body>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="brand">
+      <h2>💼 PWS</h2>
+    </div>
+    <nav>
+      <a href="#" class="active">Dashboard</a>
+      <a href="#modules">Modules</a>
+      <a href="resources.html">Resources</a>
+      <a href="profile.html">Profile</a>
+      <a href="#support">Support</a>
+      <a href="index.html" class="logout">Log Out</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <header>
+      <h1 id="welcome">Welcome Back, Wealth Builder</h1>
+      <p>Continue mastering your path to financial independence.</p>
+    </header>
+
+    <!-- PROGRESS OVERVIEW -->
+    <section class="progress">
+      <div class="card">
+        <h3>Your Progress</h3>
+        <div class="bar">
+          <div class="fill" id="progress-fill" style="width: 0%;"></div>
+        </div>
+        <p id="progress-text">0% Complete</p>
+      </div>
+
+      <div class="card">
+        <h3>Next Module</h3>
+        <p id="next-module"><strong>Module 1:</strong> The Foundation</p>
+        <a id="continue-btn" href="module1.html" class="btn">Continue</a>
+      </div>
+    </section>
+
+    <!-- MODULE LIST -->
+    <section id="modules" class="modules">
+      <h2>All Modules</h2>
+      <div class="grid" id="module-grid">
+        <div class="module-card locked" data-module="1">
+          <h3>Module 1</h3>
+          <p>The Foundation</p>
+          <a href="module1.html" class="btn small">Open</a>
+        </div>
+
+        <div class="module-card locked" data-module="2">
+          <h3>Module 2</h3>
+          <p>Building Your Trust</p>
+          <a href="module2.html" class="btn small">Open</a>
+        </div>
+
+        <div class="module-card locked" data-module="3">
+          <h3>Module 3</h3>
+          <p>Private Banking System</p>
+          <a href="module3.html" class="btn small">Open</a>
+        </div>
+
+        <div class="module-card locked" data-module="4">
+          <h3>Module 4</h3>
+          <p>Wealth Expansion</p>
+          <a href="module4.html" class="btn small">Open</a>
+        </div>
+
+        <div class="module-card locked" data-module="5">
+          <h3>Module 5</h3>
+          <p>Advanced Strategies</p>
+          <a href="module5.html" class="btn small">Open</a>
+        </div>
+
+        <div class="module-card locked" data-module="6">
+          <h3>Module 6</h3>
+          <p>Legacy Systems</p>
+          <a href="module6.html" class="btn small">Open</a>
+        </div>
+
+        <div class="module-card locked" data-module="7">
+          <h3>Module 7</h3>
+          <p>Wealth Mastery & Elite Access</p>
+          <a href="module7.html" class="btn small">Open</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="JS/dashboard.js"></script>
+</body>
+</html>
+

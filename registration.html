@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Private Wealth System</title>
+  <link rel="stylesheet" href="CSS/registration.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <h1 class="logo">The Private Wealth System</h1>
+    </div>
+  </header>
+
+  <!-- HERO / REGISTRATION FORM -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Secure Your Spot</h2>
+      <p>Complete your registration below to gain access to your course dashboard.</p>
+      
+      <form id="registrationForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <select id="package" required>
+          <option value="">Select Package</option>
+          <option value="core">Core Curriculum - $497</option>
+          <option value="advanced">Advanced Wealth Bundle - $997</option>
+          <option value="elite">Elite Mentorship - $4997</option>
+        </select>
+        <button type="submit" class="btn">Register & Pay</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 The Private Wealth System. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Pre-fill package from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedPackage = urlParams.get('package');
+    if(selectedPackage) {
+      const packageSelect = document.getElementById('package');
+      packageSelect.value = selectedPackage;
+    }
+
+    // Registration form submit
+    const form = document.getElementById('registrationForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const packageValue = document.getElementById('package').value;
+
+      if(name && email && packageValue){
+        localStorage.setItem('pwsUser', JSON.stringify({
+          name,
+          email,
+          package: packageValue,
+          verified: true
+        }));
+        alert('Registration complete! Redirecting to your dashboard...');
+        window.location.href = 'dashboard.html';
+      }
+    });
+  </script>
+
+</body>
+</html>

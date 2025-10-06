@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | PWS Dashboard</title>
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body class="bg-dark text-light">
+  <div class="container">
+    <header class="header">
+      <h1 class="glow">👤 Your Profile</h1>
+      <a href="dashboard.html" class="btn small glow-btn">← Back to Dashboard</a>
+    </header>
+
+    <section class="profile-main">
+      <!-- User Info Card -->
+      <div class="profile-card glow-border">
+        <div class="profile-header">
+          <div class="avatar">
+            <span>🧑</span>
+          </div>
+          <div class="user-info">
+            <h2 id="profile-name">Username</h2>
+            <p id="profile-email">user@example.com</p>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <a href="#" class="btn small glow-btn">Edit Profile</a>
+          <a href="#" class="btn small glow-btn">Change Password</a>
+        </div>
+      </div>
+
+      <!-- Progress Card -->
+      <div class="profile-card glow-border">
+        <h3>📈 Course Progress</h3>
+        <div class="bar">
+          <div class="fill" id="profile-progress-fill" style="width: 0%;"></div>
+        </div>
+        <p id="profile-progress-text">0% Complete</p>
+        <p>Next Module: <span id="profile-next-module">Module 1</span></p>
+      </div>
+
+      <!-- Stats / Achievements -->
+      <div class="profile-card glow-border">
+        <h3>🏆 Achievements & Stats</h3>
+        <ul>
+          <li>Total Modules Completed: <span id="profile-completed">0</span>/7</li>
+          <li>Bonus Modules Unlocked: <span id="profile-bonus">0</span></li>
+          <li>Certificates Earned: <span id="profile-certificates">0</span></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
