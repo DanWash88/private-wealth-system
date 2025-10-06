@@ -1,0 +1,133 @@
+/* REGISTRATION CSS - PREMIUM, GLOWING STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  background: #0f0f0f;
+  padding: 25px 0;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  box-shadow: 0 0 30px #00ffae33;
+}
+
+.logo {
+  font-size: 2.2rem;
+  color: #00ffae;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* HERO / FORM */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,255,174,0.2), rgba(0,0,0,0.85));
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  background: #111;
+  border-radius: 16px;
+  border: 2px solid #00ffae;
+  box-shadow: 0 0 30px #00ffae66;
+  transition: all 0.4s ease;
+}
+
+.hero-content:hover {
+  box-shadow: 0 0 50px #00ffae88;
+}
+
+.hero-content h2 {
+  font-size: 2.4rem;
+  color: #00ffae;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px #00ffae88;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+/* FORM ELEMENTS */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input, form select {
+  padding: 18px 20px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #0a0a0a;
+  color: #f5f5f5;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 5px #000;
+}
+
+form input:focus, form select:focus {
+  outline: none;
+  border-color: #00ffae;
+  box-shadow: 0 0 15px #00ffae77 inset;
+}
+
+/* BUTTON */
+form button {
+  padding: 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00ffae, #00795f);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #00ffae88;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #00e09a, #005f48);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 25px #00ffaecc;
+}
+
+/* FOOTER */
+footer {
+  background: #0f0f0f;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+}
